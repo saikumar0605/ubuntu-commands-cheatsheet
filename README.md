@@ -73,4 +73,43 @@
 - `date` - Show current date and time
 - `clear` - Clear the terminal screen
 
-This cheatsheet provides a quick reference to commonly used Ubuntu commands. Feel free to contribute additional commands!
+## Docker Commands Cheatsheet
+
+### Container Management
+- `docker ps` - List running containers
+- `docker ps -a` - List all containers
+- `docker start <container>` - Start a stopped container
+- `docker stop <container>` - Stop a running container
+- `docker restart <container>` - Restart a container
+- `docker rm <container>` - Remove a container
+- `docker logs <container>` - View logs of a container
+
+### Image Management
+- `docker images` - List all images
+- `docker pull <image>` - Download an image from a registry
+- `docker build -t <image> .` - Build an image from a Dockerfile
+- `docker rmi <image>` - Remove an image
+
+### Running Containers
+- `docker run <image>` - Run a container from an image
+- `docker run -d <image>` - Run a container in detached mode
+- `docker run -it <image>` - Run a container interactively
+- `docker exec -it <container> <command>` - Execute a command in a running container
+
+### Networking
+- `docker network ls` - List all networks
+- `docker network create <network>` - Create a new network
+- `docker network connect <network> <container>` - Connect a container to a network
+- `docker network disconnect <network> <container>` - Disconnect a container from a network
+
+### Volumes
+- `docker volume ls` - List all volumes
+- `docker volume create <volume>` - Create a new volume
+- `docker volume rm <volume>` - Remove a volume
+
+### Docker Compose
+- `docker-compose up` - Start services defined in a `docker-compose.yml`
+- `docker-compose down` - Stop and remove services
+- `docker-compose logs` - View logs of services
+
+This cheatsheet provides a quick reference to commonly used Ubuntu and Docker commands. Feel free to contribute additional commands!
